@@ -232,8 +232,15 @@ class ClockView @JvmOverloads constructor(
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        val resolvedWidth = resolveDefaultSize(widthMeasureSpec)
-        val resolvedHeight = resolveDefaultSize(heightMeasureSpec)
+        var resolvedWidth = resolveDefaultSize(widthMeasureSpec)
+        var resolvedHeight = resolveDefaultSize(heightMeasureSpec)
+
+        if (MeasureSpec.getMode(widthMeasureSpec) == MeasureSpec.AT_MOST) {
+            resolvedWidth = min(resolvedWidth, resolvedHeight)
+        }
+        if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.AT_MOST) {
+            resolvedHeight = min(resolvedWidth, resolvedHeight)
+        }
 
         setMeasuredDimension(resolvedWidth, resolvedHeight)
     }
