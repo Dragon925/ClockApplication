@@ -146,6 +146,16 @@
                 android:stepSize="1"
                 app:thumbColor="#0000FF"/>
 
+            <Button
+                style="@style/Widget.Material3.Button.TonalButton.Icon"
+                android:id="@+id/btn_reset_colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/space_16"
+                android:layout_gravity="center"
+                android:text="Сбросить цвета"
+                app:icon="@drawable/reset_24"/>
+
         </LinearLayout>
 
     </ScrollView>

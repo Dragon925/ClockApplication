@@ -2,7 +2,6 @@ package com.github.dragon925.clockapplication.fragments
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -103,6 +102,11 @@ class PlaygroundFragment : Fragment() {
                         value.toInt()
                     )
                 }
+            }
+            btnResetColors.setOnClickListener {
+                clock.setClockColor(Color.BLACK)
+                clock.clockFaceColor = Color.WHITE
+                updateColorSliders(colorChangeOption)
             }
         }
     }
