@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="numberColor" format="color"/>
+        <attr name="diamondColor" format="color"/>
+        <attr name="clockFaceColor" format="color"/>
+        <attr name="clockHandColor" format="color"/>
+        <attr name="secondHandColor" format="color"/>
+        <attr name="minuteHandColor" format="color"/>
+        <attr name="hourHandColor" format="color"/>
+        <attr name="numbersType" format="enum">
+            <enum name="arabic" value="0"/>
+            <enum name="roman" value="1"/>
+        </attr>
+        <attr name="hasNumbers" format="boolean"/>
+        <attr name="hasDiamonds" format="boolean"/>
+        <attr name="timeZone" format="enum">
+            <enum name="GMT_minus_12" value="0"/>
+            <enum name="GMT_minus_11" value="1"/>
+            <enum name="GMT_minus_10" value="2"/>
+            <enum name="GMT_minus_9" value="3"/>
+            <enum name="GMT_minus_8" value="4"/>
+            <enum name="GMT_minus_7" value="5"/>
+            <enum name="GMT_minus_6" value="6"/>
+            <enum name="GMT_minus_5" value="7"/>
+            <enum name="GMT_minus_4" value="8"/>
+            <enum name="GMT_minus_3" value="9"/>
+            <enum name="GMT_minus_2" value="10"/>
+            <enum name="GMT_minus_1" value="11"/>
+            <enum name="GMT" value="12"/>
+            <enum name="GMT_plus_1" value="13"/>
+            <enum name="GMT_plus_2" value="14"/>
+            <enum name="GMT_plus_3" value="15"/>
+            <enum name="GMT_plus_4" value="16"/>
+            <enum name="GMT_plus_5" value="17"/>
+            <enum name="GMT_plus_6" value="18"/>
+            <enum name="GMT_plus_7" value="19"/>
+            <enum name="GMT_plus_8" value="20"/>
+            <enum name="GMT_plus_9" value="21"/>
+            <enum name="GMT_plus_10" value="22"/>
+            <enum name="GMT_plus_11" value="23"/>
+            <enum name="GMT_plus_12" value="24"/>
+        </attr>
+    </declare-styleable>
+</resources>
