@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/greetingFragment">
+
+    <fragment
+        android:id="@+id/greetingFragment"
+        android:name="com.github.dragon925.clockapplication.fragments.GreetingFragment"
+        android:label="fragment_greeting"
+        tools:layout="@layout/fragment_greeting" >
+        <action
+            android:id="@+id/action_greetingFragment_to_timeZoneDemoFragment"
+            app:destination="@id/timeZoneDemoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeZoneDemoFragment"
+        android:name="com.github.dragon925.clockapplication.fragments.TimeZoneDemoFragment"
+        android:label="fragment_time_zone_demo"
+        tools:layout="@layout/fragment_time_zone_demo" >
+        <action
+            android:id="@+id/action_timeZoneDemoFragment_to_viewChangesDemoFragment"
+            app:destination="@id/viewChangesDemoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewChangesDemoFragment"
+        android:name="com.github.dragon925.clockapplication.fragments.ViewChangesDemoFragment"
+        android:label="fragment_view_changes_demo"
+        tools:layout="@layout/fragment_view_changes_demo" >
+        <action
+            android:id="@+id/action_viewChangesDemoFragment_to_playgroundFragment"
+            app:destination="@id/playgroundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playgroundFragment"
+        android:name="com.github.dragon925.clockapplication.fragments.PlaygroundFragment"
+        android:label="fragment_playground"
+        tools:layout="@layout/fragment_playground" />
+</navigation>

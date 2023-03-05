@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ClockApplication</string>
+    <string name="start">Начать</string>
+    <string name="back">Назад</string>
+    <string name="next">Дальше</string>
+    <string name="end">Завершить</string>
+    <string-array name="change_color_options">
+        <item>Окантовка</item>
+        <item>Циферблат</item>
+        <item>Цифры</item>
+        <item>Метки</item>
+        <item>Стрелки</item>
+        <item>Секундная стрелка</item>
+        <item>Минутная стрелка</item>
+        <item>Часовая стрелка</item>
+    </string-array>
 </resources>
